@@ -100,6 +100,42 @@ header nav ul li {
   padding-left: 0.4rem;
 }
 
+/* SECTION */
+
+.container-section {
+  display: flex;
+}
+
+.container-section button {
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.container-section section,
+.container-section aside {
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+section {
+  margin-right: 30px;
+}
+
+.container-section section .card {
+  border-radius: 2rem;
+}
+
+/* ASIDE */
+
+.titleAside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (max-width: 1000px) {
   .tags {
     width: 100%;
@@ -152,10 +188,7 @@ header nav ul li {
     padding: 1rem;
   }
 
-  .description,
-  .search,
-  .filtres,
-  .nbLogements {
+  .container-tel {
     margin: 2rem 1rem;
   }
 
@@ -180,5 +213,9 @@ header nav ul li {
     width: 37%;
     padding: 0.8rem;
     margin-top: 1rem;
+  }
+
+  .nbLogements {
+    margin-top: 2rem;
   }
 }
