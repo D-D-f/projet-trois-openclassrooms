@@ -128,11 +128,11 @@ header nav ul li {
   display: flex;
 }
 
-section {
+.container-section section {
   flex: 2;
 }
 
-aside {
+.container-section aside {
   flex: 1;
 }
 
@@ -160,6 +160,7 @@ section {
   border-radius: 2rem;
   padding-bottom: 20px;
   margin-top: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .container-section section .card img {
@@ -204,6 +205,7 @@ section {
   margin-top: 2rem;
   margin-bottom: 3rem;
   display: flex;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .cardPopulaire img {
@@ -222,6 +224,37 @@ section {
 .textCardPopulaire span {
   display: block;
   margin-top: 0.4rem;
+}
+
+/* SECTION ACTIVITES */
+
+.activites {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.allCardActivites {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardActivites {
+  height: 360px;
+  width: 20%;
+  margin-top: 1rem;
+  border-radius: 20px;
+  box-shadow: 2px 1px 3px rgba(0.12, 0.12, 0.12, 0.12),
+    1px 1px 1px 2px rgba(0.12, 0.12, 0.12, 0.12);
+}
+
+.cardActivites h3 {
+  padding: 1rem;
+}
+
+.cardActivites img {
+  height: 300px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -247,14 +280,10 @@ section {
   .cardPopulaire {
     width: 32%;
   }
-
-  .textCardPopulaire {
-    padding: 0.9rem;
-  }
 }
 
 @media screen and (max-width: 769px) {
-  * {
+  .container {
     margin: 0;
     padding: 0;
   }
@@ -321,12 +350,72 @@ section {
 
   .tag {
     font-size: 0.8rem;
-    width: 37%;
+    width: 48%;
     padding: 0.8rem;
     margin-top: 1rem;
   }
 
   .nbLogements {
     margin-top: 2rem;
+  }
+
+  .container-section {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-section aside,
+  .container-section section {
+    border-radius: 0;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .container-section section {
+    background-color: #ffffff;
+  }
+
+  .bloc-cardPopulaire {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardPopulaire {
+    width: 100%;
+  }
+
+  .section-bloc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-section section .card {
+    margin: 2rem auto;
+    width: 100%;
+  }
+
+  .container-section section .card img {
+    height: 200px;
+  }
+
+  .container-section section button {
+    display: none;
+  }
+
+  .allCardActivites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activites h2 {
+    width: 90%;
+    padding-left: 2rem;
+  }
+
+  .cardActivites {
+    width: 90%;
   }
 }
