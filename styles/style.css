@@ -14,6 +14,16 @@ a {
   text-decoration: none;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 1.5rem;
+}
+
 /* HEADER */
 
 header .menu {
@@ -35,8 +45,15 @@ header nav ul li {
   padding-right: 2rem;
 }
 
-.description {
-  line-height: 0.8rem;
+.description,
+.search,
+.filtres,
+.nbLogements {
+  margin-top: 1.5rem;
+}
+
+.nbLogements {
+  margin-bottom: 1.5rem;
 }
 
 .description h2 {
@@ -65,11 +82,16 @@ header nav ul li {
   border-radius: 0px 15px 15px 0px;
   color: #ffffff;
   font-weight: 700;
+  padding: 1rem;
 }
 
 .filtres,
 .search {
   margin-top: 1rem;
+}
+
+.filtres h3 {
+  padding-right: 2rem;
 }
 
 .filtres,
@@ -106,6 +128,14 @@ header nav ul li {
   display: flex;
 }
 
+section {
+  flex: 2;
+}
+
+aside {
+  flex: 1;
+}
+
 .container-section button {
   font-size: 18px;
   font-weight: 700;
@@ -125,7 +155,39 @@ section {
 }
 
 .container-section section .card {
+  width: 30%;
+  background-color: #ffffff;
   border-radius: 2rem;
+  padding-bottom: 20px;
+  margin-top: 2rem;
+}
+
+.container-section section .card img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px solid #ffffff;
+}
+
+.card .textCard {
+  padding-left: 20px;
+}
+
+.card .textCard span {
+  padding: 5px 0;
+  display: block;
+}
+
+.section-bloc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-section section button {
+  margin-top: 2rem;
+}
+
+.container-section section button:hover {
+  cursor: pointer;
 }
 
 /* ASIDE */
@@ -136,9 +198,58 @@ section {
   align-items: center;
 }
 
+.cardPopulaire {
+  background: #ffffff;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.cardPopulaire img {
+  width: 50%;
+  border: 5px solid #ffffff;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.textCardPopulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.textCardPopulaire span {
+  display: block;
+  margin-top: 0.4rem;
+}
+
 @media screen and (max-width: 1000px) {
   .tags {
     width: 100%;
+  }
+
+  .container-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-section section {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .bloc-cardPopulaire {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cardPopulaire {
+    width: 32%;
+  }
+
+  .textCardPopulaire {
+    padding: 0.9rem;
   }
 }
 
