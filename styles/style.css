@@ -21,7 +21,13 @@ a {
 }
 
 .container {
-  margin: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+span b {
+  font-weight: 700;
 }
 
 /* HEADER */
@@ -43,6 +49,12 @@ header nav ul {
 
 header nav ul li {
   padding-right: 2rem;
+  text-align: center;
+}
+
+.menu ul li:hover {
+  cursor: pointer;
+  color: #0065fc;
 }
 
 .description,
@@ -114,12 +126,24 @@ header nav ul li {
   font-weight: 700;
 }
 
+.tag:hover {
+  cursor: pointer;
+  background-color: #deebff;
+}
+
 .tag svg {
   width: 1rem;
 }
 
 .tag span {
   padding-left: 0.4rem;
+}
+
+.informations {
+  color: #0065fc;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  padding: 3px;
 }
 
 /* SECTION */
@@ -164,6 +188,7 @@ section {
 }
 
 .container-section section .card img {
+  height: 150px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   border: 5px solid #ffffff;
@@ -210,11 +235,13 @@ section {
 
 .cardPopulaire img {
   width: 50%;
+  height: 150px;
   border: 5px solid #ffffff;
   border-radius: 20px 0px 0px 20px;
 }
 
 .textCardPopulaire {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -257,6 +284,24 @@ section {
   border-radius: 20px 20px 0px 0px;
 }
 
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f2f2f2;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.foot h4 {
+  padding-bottom: 1rem;
+}
+
+.foot ul li {
+  padding-bottom: 0.5rem;
+}
+
 @media screen and (max-width: 1000px) {
   .tags {
     width: 100%;
@@ -279,6 +324,19 @@ section {
 
   .cardPopulaire {
     width: 32%;
+  }
+
+  .cardPopulaire img {
+    height: 100%;
+    width: 50%;
+  }
+
+  .titleCard {
+    width: 100%;
+  }
+
+  .cardActivites {
+    height: 400px;
   }
 }
 
@@ -384,6 +442,15 @@ section {
 
   .cardPopulaire {
     width: 100%;
+    height: 200px;
+  }
+
+  .cardPopulaire img {
+    width: 50%;
+  }
+
+  .textCardPopulaire {
+    width: 50%;
   }
 
   .section-bloc {
@@ -417,5 +484,20 @@ section {
 
   .cardActivites {
     width: 90%;
+    height: 260px;
+  }
+
+  .cardActivites img {
+    height: 200px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foot h4,
+  .foot h4 {
+    margin-top: 1rem;
   }
 }
