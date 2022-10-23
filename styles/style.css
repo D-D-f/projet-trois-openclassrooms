@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 :root {
   --bluePrincipal: #0065fc;
@@ -18,6 +18,7 @@ a {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -136,13 +137,17 @@ header nav ul li {
   font-weight: 700;
 }
 
+.tag i {
+  color: var(--bluePrincipal);
+}
+
+.tag:nth-child(2) i {
+  color: var(--bluePrincipal);
+}
+
 .tag:hover {
   cursor: pointer;
   background-color: #deebff;
-}
-
-.tag svg {
-  width: 1rem;
 }
 
 .tag span {
@@ -204,6 +209,19 @@ section {
   border: 5px solid #ffffff;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.textCard .fa-solid {
+  color: var(--bluePrincipal);
+}
+
+.textCard .fa-solid:last-child {
+  color: #f2f2f2;
+}
+
 .card .textCard {
   padding-left: 20px;
 }
@@ -261,6 +279,14 @@ section {
 .textCardPopulaire span {
   display: block;
   margin-top: 0.4rem;
+}
+
+.noteCardPopulaire {
+  color: var(--bluePrincipal);
+}
+
+.noteCardPopulaire i:last-child {
+  color: #f2f2f2;
 }
 
 /* SECTION ACTIVITES */
