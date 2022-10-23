@@ -11,7 +11,7 @@ Ce projet consiste à reproduire la maquette :
 ## Première étapes :
 
 - Découper la maquette en "bloc", avec le nom des balises et class
-- Importer les images et icones dans un dossier contenant le projet
+- Importer le lien cdn pour pouvoir utiliser font-awesome, pour avoir les icones
 - Importer la font via Google Font
 
 ## Deuxième étapes :
