@@ -88,14 +88,14 @@ header nav ul li {
 }
 
 .search button:nth-of-type(1) {
-  border: 1px solid #f2f2f2;
+  border: 1px solid var(--bgSection);
   border-radius: 1.5rem 0 0 1.5rem;
   padding: 1rem;
 }
 
 .search input {
   padding: 0.7rem;
-  border: 1px solid #f2f2f2;
+  border: 1px solid var(--bgSection);
   font-weight: 700;
 }
 
@@ -179,12 +179,12 @@ header nav ul li {
   font-size: 18px;
   font-weight: 700;
   border: none;
-  background-color: #f2f2f2;
+  background-color: var(--bgSection);
 }
 
 .container-section section,
 .container-section aside {
-  background-color: #f2f2f2;
+  background-color: var(--bgSection);
   border-radius: 2rem;
   padding: 2rem;
 }
@@ -219,7 +219,7 @@ a {
 }
 
 .textCard .fa-solid:last-child {
-  color: #f2f2f2;
+  color: var(--bgSection);
 }
 
 .card .textCard {
@@ -286,7 +286,7 @@ a {
 }
 
 .noteCardPopulaire i:last-child {
-  color: #f2f2f2;
+  color: var(--bgSection);
 }
 
 /* SECTION ACTIVITES */
@@ -325,7 +325,7 @@ a {
 footer {
   display: flex;
   justify-content: space-evenly;
-  background-color: #f2f2f2;
+  background-color: var(--bgSection);
   margin-top: 2rem;
   padding: 2rem;
 }
@@ -407,7 +407,7 @@ footer {
     width: 100%;
     border-top: none;
     font-size: 1.3rem;
-    border-bottom: 0.3rem solid #f2f2f2;
+    border-bottom: 0.3rem solid var(--bgSection);
     padding-bottom: 1rem;
   }
 
